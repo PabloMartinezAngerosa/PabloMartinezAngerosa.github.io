@@ -1,0 +1,33 @@
+body {
+  background-color: #111;
+}
+
+p, b, ol li {
+  color: #fff;
+}
+.navMenu ul li:hover .d-submenu li a:hover {
+	color: #0ca4fb;
+}
+.btn-modern {
+	color: #fff;
+	font-weight: 600;
+}
+.greyBar {
+   background-color:#444;
+}
+
+#imgLight, .moduleLight {
+	display: none;
+}
+#imgDark, .moduleDark {
+	display: block;
+}
+
+.headerSection, .sidebarSection, footer {
+  background-color: #1B1C1E;
+}
+@media(max-width:991px){ /* larger mobile devices */
+.openSidebar .sidenav {
+	background-color: #1B1C1E;
+  }
+}

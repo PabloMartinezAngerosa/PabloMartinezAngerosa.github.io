@@ -1,0 +1,133 @@
+window.onload = function() {
+  tawk();
+  loadGST();
+  $("body").fadeIn();
+  page();
+};
+var scrollTop = document.getElementById("scrollTop");
+
+window.onscroll = function() {
+  showButton();
+};
+// Get the header
+var header = document.getElementById("myHeader");
+
+function page() {
+	var i;
+	var section = window.location.pathname.split('/').pop().split('.').pop();
+
+    if (section.length > 1) {
+	  var tabs = document.getElementsByClassName("pages");
+	    for (i = 0; i < tabs.length; i++) {
+          if (tabs[i].id == section) {
+		    tabs[i].className += " activePage";
+			tabs[i].style.color = "#1B1C1E";
+		  }
+		  else {
+			tabs[i].className = tabs[i].className.replace(" activePage", "");			
+		  }
+	    }
+	}
+	getHash();
+}
+
+
+function getHash() {
+   var hash = window.location.hash.split('#').pop();
+   if(hash.length > 1) {
+	document.getElementById(hash).scrollIntoView();
+  }
+}
+
+function showArms(divToExpand) {
+  if(document.getElementById(divToExpand).style.display == "block") {
+    document.getElementById(divToExpand).style.display = "none";
+  } else  {
+	document.getElementById("media").style.display = "none";
+	document.getElementById("interactions").style.display = "none";
+	document.getElementById("communications").style.display = "none";
+	document.getElementById("impressions").style.display = "none";
+	document.getElementById("relationships").style.display = "none";
+	document.getElementById(divToExpand).style.display = "block";
+
+    document.getElementById(divToExpand).scrollIntoView();
+  }
+}
+
+function disable() {
+	document.getElementById("loaddata").style.display = "none";
+}
+
+$('.toggle').click(function(){
+  $('body').toggleClass('opennav');
+});
+
+
+if ( $(window).width() <= 991 ) {
+    header.classList.add("sticky");
+  $('.navMenu ul li a').click(function(){
+    $(this).parent('li').find('.d-submenu').slideToggle();
+    $(this).parent('li').siblings().find('.d-submenu').slideUp();
+  });
+}
+
+function showButton() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollTop.style.display = "block";
+  } else {
+    scrollTop.style.display = "none";
+  }
+}
+
+function scrollUp() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
+// Global site tag (gtag.js) - Google Analytics
+function loadGST() {
+    var script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=UA-153070833-1";
+    script.async=true;
+    document.getElementsByTagName("head")[0].appendChild(script);
+	
+	window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153070833-1');
+} 
+
+function tawk() {
+	// Start of Tawk.to Script
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script");
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5e41bb65298c395d1ce737f7/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    document.getElementsByTagName("head")[0].appendChild(s1);
+    })();
+}
+
+	  
+
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      $(box).addClass('skewed');
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null,    // optional scroll container selector, otherwise use window,
+    resetAnimation: true,     // reset animation on end (default is true)
+  }
+);
+
+wow.init();
