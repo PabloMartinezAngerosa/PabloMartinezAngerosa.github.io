@@ -1,0 +1,74 @@
+/* tags */
+
+body {
+  background-color: #000;
+}
+p {
+  color: #fff;
+}
+ol, ul {
+  color: #fff;
+}
+footer {
+    background-color: #1b1c1e;
+}
+
+/* general */
+#globeSpan {
+	color: #fff;
+}
+
+
+/* buttons */
+
+.btn-modern:hover {
+  color: #fff;
+  box-shadow: inset -6em 0 0 0 #0ca4fb,
+  inset 6em 0 0 0 #0ca4fb;  
+  opacity: 1;
+}
+ 
+
+/* roadmap */
+
+.roadmap-block {
+  color: #fff;
+}
+
+.childa {
+	background: #000;
+}
+
+/* form */
+
+.formLabel {
+    color: #fff;
+}
+input[type=text],
+select,
+textarea {
+    background-color: transparent;
+    border: 2px solid #0ca4fb;
+    color: #fff;
+}
+input[type=text]:focus,
+option,
+textarea:focus {
+    background-color: #1b1c1e;
+}
+input[type=submit] {
+    background-color: #0ca4fb;
+}
+
+/*images */
+
+#imgLight, .moduleLight {
+	display: none;
+}
+#imgDark, .moduleDark {
+	display: block;
+}
+
+.bannerSection {
+	background-color: #000
+}
