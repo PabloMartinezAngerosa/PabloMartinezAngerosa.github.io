@@ -1,0 +1,153 @@
+/* tags */
+
+body {
+  background-color: #f2f2f2;
+}
+
+p {
+  color: #000;
+}
+
+ol, ul {
+  color: #000;
+}
+
+/*general */
+
+.screen, .twinkling {
+	display: none;
+}
+#globeSpan {
+	color: #0ca4fb;
+}
+a:hover #globeSpan, #globeSpan:hover {
+	color: #fff;
+}
+/* buttons */
+.btn-modern {
+	color: #0ca4fb;
+	font-weight: 600;
+}
+
+.btn-modern:hover {
+  color: #fff;
+  box-shadow: inset -8em 0 0 0 #0ca4fb,
+  inset 8em 0 0 0 #0ca4fb;  
+  opacity: 1;
+}
+
+/* roadmap */
+
+.roadmap-block h6 {
+  color: #000;
+}
+
+.childa {
+	background: transparent;
+}
+
+.d-submenu {
+	border: #0390e2;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-radius: 3px;
+}
+
+.headerSection, footer, .d-submenu, .copyright, #scrollTop:hover {
+	background-color: #0ca4fb;
+}
+
+.navMenu ul li a, .navMenu ul li:hover .d-submenu li a, .footerHeader, .listStyle > li > a, .copyright > p > a {
+    color: #fff;
+    font-weight: 600;
+}
+.d-submenu ul li a {
+color: #fff;
+}
+.navMenu ul li:hover a, .navMenu ul li:hover .d-submenu li a:hover, .listStyle > li > a:hover, .copyright > p > a:hover  {
+	color: #fff;
+}
+
+.copyright > p > a:hover  {
+  text-decoration: underline;
+}
+.activePage {
+    background-color: #f2f2f2;
+}
+
+/* form */
+
+.formLabel {
+    color: #000;
+}
+input[type=text],
+select,
+textarea {
+    background-color: transparent;
+    border: 2px solid #0ca4fb;
+    color: #000;
+}
+input[type=text]:focus,
+option,
+textarea:focus {
+    background-color: #fff;
+}
+input[type=submit] {
+    background-color: #0ca4fb;
+	color: #fff;
+}
+
+/* branding style guide */
+
+#bsg, .divider-content, th, td, table {
+    color: #000;
+}
+
+/*images */
+
+#imgLight, .moduleLight {
+	display: block;
+}
+#imgDark, .moduleDark {
+	display: none;
+}
+
+.link-block ul li a {
+	color: #000;
+}
+
+.hover-area .back-side p {
+	color: #fff;
+}
+
+.branchLeft, .branchRight {
+	background-color:  #e5f4fc;
+}
+h1, h2, h3, h4, h5 {
+	text-shadow: 1px 1px #1b1c1e;
+}
+
+@media(max-width:991px) {
+  .d-submenu {
+	padding: 0 15px;
+	border: solid #0ca4fb;
+	background: #f2f2f2;
+  }
+
+  .opennav .navMenu {
+	background-color: #f2f2f2;
+  }
+	
+  .opennav .navMenu ul li a, .navMenu ul li:hover .d-submenu li a {
+	color: #000;
+  }
+
+  #dark-mode-toggle-1 {
+	filter: invert(100%);
+  }
+
+  .opennav .bar {
+	background-color: #000;
+  }
+}
+}

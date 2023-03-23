@@ -1,0 +1,500 @@
+@media(max-width:1400px) {
+	.blueBar {
+		margin-top: 5em
+	}
+
+	.roadmap-page h2 {
+		font-size: 31px
+	}
+
+	h2 {
+		font-size: 35px
+	}
+
+	p {
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.roadmap-block p {
+		font-size: 14px;
+		line-height: 22px
+	}
+
+	.getBtn a {
+		font-size: 13px
+	}
+
+	.roadmap-block h6 {
+		font-size: 14px;
+		font-weight: 500;
+		margin-bottom: 0.5em
+	}
+
+	.hp-intro {
+		line-height: 45px;
+		font-size: 40px
+	}
+	
+	.bannerSection {
+			height: 120px;
+	}
+	
+	.bannerImage img {
+		height: 120px;
+	}
+}
+
+@media(max-width:1080px) {
+	.slogan {
+		color: #0ca4fb;
+		font-size: 20px;
+		font-weight: 800;
+		padding: 1em 0;
+	}
+
+	.hp-intro {
+		line-height: 46px;
+		font-size: 30px;
+	}
+
+	#webgl {
+	margin-left: 0em;
+	} 
+
+	p {
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.hp-icons img {
+		width: 60px;
+
+	}
+}
+@media(max-width:991px) {
+	#langIcon {
+	  padding-right: 0;
+    }
+	.screen {
+      background:#000 url("./../images/medium/stars.png") repeat top center;
+    }
+	.navMenu {
+		position: fixed;
+		width: 100%;
+		left: 0;
+		right: 0;
+		background-color: transparent;
+		overflow-y: scroll;
+		height: 100%;
+		z-index: 1;
+		top: 0;
+		transform: translate(100%, 0px);
+		transition: all 500ms ease-in-out 0s;
+		display: flex;
+		justify-content: center;
+	}
+
+	.center-transparent {
+		top: 5em;
+	}
+
+	.center-transparent-index {
+		top: 6em;
+	}
+
+	.headerSpacing {
+		margin: auto;
+	}
+
+	.extendImg {
+		position: relative;
+		width: 75%
+	}
+
+	.col-auto {
+		margin: 0 2em
+	}
+
+	.col-auto .sticky {
+		height: 50px;
+		top: 0
+	}
+
+	.opennav .toggle {
+		z-index: 2
+	}
+
+	.opennav .navMenu {
+		transform: translate(0%, 0%);
+		background-color: #000
+	}
+
+	.navMenu > ul {
+		flex-direction: column;
+		justify-content: flex-start;
+		text-align: center;
+		height: 100%;
+		padding-top: 80px
+	}
+
+	.navMenu > ul > li+li {
+		margin-left: 0;
+		padding-top: 20px
+	}
+
+	.opennav .navMenu ul li a {
+		color: #fff
+	}
+
+	.opennav .bar {
+		background-color: #fff
+	}
+
+	.opennav .bar:nth-child(2) {
+		opacity: 0
+	}
+
+	.opennav .bar:nth-child(1) {
+		transform: rotate(45deg);
+		top: 0
+	}
+
+	.opennav .bar:nth-child(3) {
+		transform: rotate(-45deg);
+		top: 0
+	}
+
+	.navMenu ul li a:after {
+		background-color: #025e93
+	}
+
+	.navMenu ul li:hover .d-submenu {
+		margin-top: 0
+	}
+
+	.closefilter {
+		display: block;
+		text-align: right;
+		margin-bottom: 20px
+	}
+
+	.closefilter > img {
+		width: 15px
+	}
+
+	.listCol {
+		display: block;
+		background: #fff;
+		padding: 8px;
+		right: 0;
+		z-index: 1
+	}
+
+	.d-submenu {
+		padding: 0 15px;
+		border: solid #0ca4fb;
+		background: #000;
+	}
+	.navMenu ul li:hover .d-submenu li a {
+		text-align: center;
+	}
+
+	.listCol > span > img {
+		width: 20px
+	}
+
+	#livesearch,.d-submenu {
+		position: static;
+		opacity: 1;
+		visibility: visible;
+		box-shadow: none;
+		text-shadow: none;
+		display: none
+	}
+
+	.d-submenu li,.navMenu .d-submenu li a,.navMenu .d-submenu li:hover {
+		border: none
+	}
+
+	.navMenu .d-submenu li a {
+		font-weight: 500;
+		padding: 10px 0
+	}
+
+	.banner-btns {
+		margin: auto;
+		display: block;
+		width: 40%;
+		padding-top: 3em;
+	}
+	.row a {
+		margin: 0.5em 0
+	}
+
+	.slogan {
+		color: #0ca4fb;
+		font-size: 32px;
+		font-weight: 700;
+		padding: 2em 0 1em 0;
+	}
+
+	.hp-intro {
+		line-height: 56px;
+		font-size: 44px;
+	}
+
+	#webgl {
+	margin-left: 0em;
+	} 
+
+	.hp-icons img {
+		width: 65px
+	}
+
+	h2 {
+		font-size: 33px
+	}
+
+	p {
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	footer {
+		margin-top: 0
+	}
+
+	.page-header {
+		text-align: center;
+		padding-left: 0;
+		display: block
+	}
+
+	.auditImg {
+		width: 40%
+	}
+
+	.assetDiagram {
+		width: 100%;
+		margin-bottom: 5em
+	}
+
+	.hover-area .back-side {
+		overflow-y: scroll
+	}
+
+	.imgRight, .imgLeft {
+		text-align: center;
+		margin-top: 3em;
+		width: 85%;
+	}
+
+	.mobileWallet {
+		text-align: center
+	}
+
+	.blueBarLine {
+		margin: 0
+	}
+
+	.divider-content {
+		font-size: 20px
+	}
+
+	.divider-line {
+		top: 0.75em
+	}
+
+	.clearDiv {
+		display: block
+	}
+
+	#HPVid, #mobileGif {
+		width: 75%
+	}
+
+	.footerBTNS a {
+		margin: 0.4em
+	}
+
+	.extraSpace {
+		margin: 4em 0
+	}
+	
+	.footerHeader {
+	  margin-top: 2em;
+	  margin-bottom: 0;
+	}
+	
+	.listStyle > li {
+      margin-top: .1em;
+    }
+	
+	.branchLeft, .branchRight {
+	 width: 100%;
+	}
+	.branchRight {
+	  margin-left:0%;
+    }
+    
+.bannerSection {
+			height: 90px;
+	}
+	
+.bannerImage img {
+		height: 90px;
+	}
+}
+
+@media(max-width:769px) {
+	h1, h2, h3, h4, h5 {
+		text-align: center;
+	}
+	.slogan {
+		color: #0ca4fb;
+		font-size: 14px;
+		font-weight: 800;
+		padding: 0 0 1em 0;
+	}
+
+	  .hp-intro {
+		line-height: 34px;
+		font-size: 22px;
+		padding-bottom: 40px;
+	}
+	.banner-btns {
+		margin: auto;
+		display: block;
+		width: 100%;
+		padding-top: 0;
+	}
+
+	.imgRight, .imgLeft {
+		text-align: center;
+		margin-top: 1em;
+		width: 100%;
+	}
+
+	.copyright > span a:before {
+		height: 14px
+	}
+
+	p {
+		font-size: 13px;
+		line-height: 20px
+	}
+
+	h1 {
+		font-size: 28px
+	}
+.bannerSection {
+			height: 60px;
+	}
+	
+	.bannerImage img {
+		height: 60px;
+	}
+}
+
+@media(max-width:640px) {
+	.whiteDiv {
+		background: transparent;
+	}
+	#HPVid, #mobileGif {
+		width: 100%
+	}
+#canvasDiv {
+	height: 200px;
+}	
+	.bannerSection {
+			height: 70px;
+	}
+	
+	.bannerImage img {
+		height: 70px;
+	}
+}
+
+@media screen and (max-width:585px) {
+	.screen {
+      background:#000 url("./../images/small/stars.png") repeat top center;
+    }
+	.blueBar {
+		margin-top: 2.5em;
+		margin-bottom: 2.5em
+	}
+
+	.roadmapHeader {
+		margin-top: 2em
+	}
+
+	.copyright > span a:before {
+		height: 12px
+	}
+
+	.copyright > p > a {
+		border-left: 0;
+		padding-left: 0;
+		margin-left: 0;
+		display: block
+	}
+
+	.copyright > p,.copyright > p > a {
+		font-size: 13px
+	}
+
+	.copyright_Sec {
+		padding: 10px 0
+	}
+
+	.footerCol > h4 {
+		margin-bottom: 10px;
+		margin-top: 10px
+	}
+
+	.logo > a > img {
+		max-width: 150px
+	}
+}
+
+@media screen and (max-width:385px) {
+	.headerSection,.sticky {
+		padding: 10px 0
+	}
+	
+	.col-auto {
+		margin: 0 1em
+	}
+
+	.hp-intro {
+		line-height: 38px;
+		font-size: 22px;
+	}
+
+	.hp-icons img {
+		width: 55px
+	}
+
+	h2 {
+		font-size: 20px
+	}
+
+	.btn-inverted,.btn-modern {
+		min-width: 100px;
+		font-size: 10px
+	}
+
+	.extraSpace {
+		margin: 2em 0
+	}
+	
+	.bannerSection {
+			height: 70px;
+			top: 52px;
+	}
+	
+	.bannerImage img {
+		height: 70px;
+	}
+}
